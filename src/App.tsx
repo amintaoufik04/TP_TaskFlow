@@ -3,10 +3,12 @@ import Login from './features/auth/Login';
 import Dashboard from './pages/Dashboard';
 import ProjectDetail from './pages/ProjectDetail';
 import ProtectedRoute from './components/ProtectedRoute';
+import LoginMUI from './features/auth/LoginMUI';
+import LoginBS from './features/auth/LoginBS';
 export default function App() {
     return (
         <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<LoginMUI />} />
             <Route
                 path="/dashboard"
                 element={
